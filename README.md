@@ -4,7 +4,7 @@
 
 Paylane is a demo payment gateway: a marketing site, a checkout flow and a merchant dashboard in one Next.js app. A customer pays by card, the merchant is settled in USDC on Base, Ethereum or Solana. **No real payments are made.**
 
-**Live demo:** coming soon
+**Live demo:** [Paylane](https://paylane-sigma.vercel.app/)
 
 ![Landing page](docs/screenshots/landing.png)
 
