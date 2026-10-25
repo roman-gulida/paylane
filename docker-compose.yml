@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_REOWN_PROJECT_ID: ${NEXT_PUBLIC_REOWN_PROJECT_ID:-}
+    image: paylane
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_PATH: /data/paylane.db
+    volumes:
+      # Keeps the payments when the container is rebuilt or restarted.
+      - paylane-data:/data
+    restart: unless-stopped
+
+volumes:
+  paylane-data:
